@@ -9,8 +9,8 @@ public class Venta {
     private int cantidadVendida;
     private double costoTotal;
 
-    public Venta(LocalDate fecha, Producto producto, int cantidadVendida, double costoTotal) {
-        this.fecha = fecha;
+    public Venta(Producto producto, int cantidadVendida) {
+        this.fecha = LocalDate.now();
         this.producto = producto;
         this.cantidadVendida = cantidadVendida;
         this.costoTotal = cantidadVendida * producto.getCosto();
